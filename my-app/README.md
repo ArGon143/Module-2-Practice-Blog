@@ -1,3 +1,34 @@
+Области хранения данных:
+
+-   БД на json-server
+-   BFF
+-   redux stor
+
+Сущности приложения:
+
+-   пользователь: БД (список пользователей), BFF (сессия текущего), stor (отображение в браузере)
+-   роль пользователя: БД (список ролей), BFF (сессия пользователя с ролью), stor (использование на клиенте)
+-   статья: БД (список статей), stor (отображение на клиенте)
+-   комментарий: БД (список комментариев), stor (отображение на клиенте)
+
+Таблицы БД:
+
+-   пользователи - users: id / login / password / registed_at / role_id
+-   роли - roles: id / name
+-   статьи - posts: id / title / image_url / content / published_at
+-   комментарии - comments: id / author_id / post_id / content
+
+Схема состояния на BFF:
+
+-   сессия текущего пользователя: login / password / role
+
+Схема для Redux stor:
+
+-   user: id / login / poleId
+-   posts: массив post: id / title / imageUrl / publishedAt / commentsCount
+-   post: id / title / imageUrl / content / publishedAt / comments: массив comment: id / author / content /publishedAt
+-   users: массив user: id / login / registeredAt / role
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

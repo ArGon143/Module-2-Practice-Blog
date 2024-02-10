@@ -26,7 +26,11 @@ const FooterContainer = ({ className }) => {
 			<div>
 				<div>
 					{city},{' '}
-					{new Date().toLocaleString('ru', { day: 'numeric', month: 'long' })}
+					{new Date().toLocaleString('ru', {
+						day: 'numeric',
+						month: 'long',
+						year: 'numeric',
+					})}
 				</div>
 				<div>
 					{temperature} градусов, {weather}

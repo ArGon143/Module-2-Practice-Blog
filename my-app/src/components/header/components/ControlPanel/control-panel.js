@@ -7,19 +7,13 @@ import {
 	selectUserRole,
 	selectUserSession,
 } from '../../../../selectors';
-import { ROLE } from '../../../../constans/role';
+import { ROLE } from '../../../../constans';
 import { logout } from '../../../../actions';
 
 const RightAligned = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-`;
-
-const StyledIcon = styled.div`
-	&:hover {
-		cursor: pointer;
-	}
 `;
 
 const UserName = styled.div`
@@ -44,20 +38,16 @@ const ControlPanelContainer = ({ className }) => {
 				) : (
 					<>
 						<UserName>{login}</UserName>
-						<StyledIcon>
-							<Icon
-								id="fa-sign-out"
-								margin="0 0 0 10px"
-								onClick={() => dispatch(logout(session))}
-							/>
-						</StyledIcon>
+						<Icon
+							id="fa-sign-out"
+							margin="0 0 0 10px"
+							onClick={() => dispatch(logout(session))}
+						/>
 					</>
 				)}
 			</RightAligned>
 			<RightAligned>
-				<StyledIcon onClick={() => navigate(-1)}>
-					<Icon id="fa-backward" margin="9px 0 0 0" />
-				</StyledIcon>
+				<Icon id="fa-backward" margin="9px 0 0 0" onClick={() => navigate(-1)} />
 				<Link to="/post">
 					<Icon id="fa-file-text-o" margin="9px 0 0 16px" />
 				</Link>

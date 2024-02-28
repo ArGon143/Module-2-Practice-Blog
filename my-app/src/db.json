@@ -93,10 +93,73 @@
   ],
   "comments": [
     {
-      "id": "",
-      "author_id": "",
-      "post_id": "",
-      "content": ""
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2047-11-12 16:13",
+      "content": "Первый комментарий",
+      "id": 1
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2033-08-27 14:19",
+      "content": "Комментарий 2",
+      "id": 2
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2052-04-19 05:45",
+      "content": "Комментарий 23",
+      "id": 3
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2049-11-27 23:23",
+      "content": "Комментарий 234",
+      "id": 4
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2051-06-23 00:34",
+      "content": "Комментарий 2345",
+      "id": 5
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2043-09-22 02:55",
+      "content": "Комментарий 23456",
+      "id": 6
+    },
+    {
+      "author_id": "wn4eXvp",
+      "post_id": "001",
+      "published_at": "2060-04-17 15:36",
+      "content": "132",
+      "id": 7
+    },
+    {
+      "author_id": "wn4eXvp",
+      "post_id": "001",
+      "published_at": "2042-04-02 23:28",
+      "content": "132",
+      "id": 8
+    }
+  ],
+  "sessions": [
+    {
+      "hash": "0.85991082530250717574915597651852294802665710449219",
+      "user": {
+        "id": "wn4eXvp",
+        "login": "argon143",
+        "password": "123123",
+        "registeredAt": "2041-07-02 01:58",
+        "roleId": 1
+      },
+      "id": 1
     }
   ]
 }

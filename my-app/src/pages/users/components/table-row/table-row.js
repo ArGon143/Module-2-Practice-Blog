@@ -8,6 +8,7 @@ export const TableRow = styled(TableRowContainer)`
 	display: flex;
 	align-items center;
 	border: ${({ border }) => (border ? '1px solid #000' : 'none')};
+	border-radius: 7px;
 
 	& > div {
 		display: flex;

@@ -38,6 +38,7 @@ const CommentsContainer = ({ className, comments, postId }) => {
 				{comments.map(({ id, author, content, publishedAt }) => (
 					<Comment
 						key={id}
+						postId={postId}
 						id={id}
 						author={author}
 						content={content}
@@ -64,5 +65,6 @@ export const Comments = styled(CommentsContainer)`
 		height: 120px;
 		resize: none;
 		font-size: 18px;
+		border-radius: 7px;
 	}
 `;

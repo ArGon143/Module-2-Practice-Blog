@@ -24,8 +24,10 @@ const PaginationContainer = ({ className, page, lastPage, setPage }) => {
 export const Pagination = styled(PaginationContainer)`
 	display: flex;
 	jestify-content: center;
-	margin: 0 0 20px;
+	position: absolute;
+	bottom: 140px;
 	padding: 0 35px;
+	width: 100%;
 
 	& button {
 		margin: 0 5px;

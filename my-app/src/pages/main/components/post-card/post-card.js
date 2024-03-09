@@ -65,6 +65,10 @@ export const PostCard = styled(PostCardContainer)`
 	& h4 {
 		margin: 0;
 		margin-bottom: 30px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		width: 270px;
 	}
 
 	& .post-card-info {

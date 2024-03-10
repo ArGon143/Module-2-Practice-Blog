@@ -1,2 +1,2 @@
 export * from './logo/logo';
-export * from './ControlPanel/control-panel';
+export * from './controlPanel/control-panel';

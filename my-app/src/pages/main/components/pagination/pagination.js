@@ -41,5 +41,6 @@ export const Pagination = styled(PaginationContainer)`
 		height: 32px;
 		text-align: center;
 		border: 1px solid #000;
+		margin: 0 5px;
 	}
 `;
